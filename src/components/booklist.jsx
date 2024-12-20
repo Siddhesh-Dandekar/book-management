@@ -50,6 +50,7 @@ function Booklist() {
             <br />
             <div className="flex gap-3 flex-wrap justify-center">
                 {filterbook.map(item => <Link to={`book/${item.id}`} key={item.id} className="hover:scale-105 duration-300"><Bookcard bookdata={item} /></Link>)}
+    
             </div>
         </div>
     )
